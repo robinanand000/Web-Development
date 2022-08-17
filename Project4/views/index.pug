@@ -1,0 +1,41 @@
+//- index.pug
+doctype html
+html
+    head
+        title Robin Dance Academy 
+        style  
+            include ../static/style.css
+            <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2:wght@600&family=Dancing+Script:wght@500&family=Permanent+Marker&family=Ubuntu&display=swap" rel="stylesheet">
+    body
+        nav#navbar 
+            ul 
+                li  #[a(href="/") #[span Home]]
+                li  #[a(href="/") #[span About]]
+                li  #[a(href="/") #[span Services]]
+                li  #[a(href="/") #[span Class info]]
+                li  #[a(href="/") #[span Contact us]]
+
+        section#intro-section
+            div Welcome to  Robin's Dance Acadmey
+            div EAt Sleep Dance Repeat 
+        section#mission-section 
+            h2 Our Mission 
+            div.card
+                h3 Dance perfection  
+            div.card
+                h3 Dance the way you like 
+            div.card
+                h3 Dance is passion   
+        section#sponser-section 
+            h2 Our Sponsers
+            div.sponser
+                img(src="/static/img/logo1.png", alt="sponser image" Class="sp-image")
+                img(src="/static/img/logo2.png", alt="sponser image" Class="sp-image")
+                img(src="/static/img/logo3.png", alt="sponser image" Class="sp-image")
+                img(src="/static/img/logo4.png", alt="sponser image" Class="sp-image")
+        footer#footer 
+            p Copyright© 2022 Robin's Dance Academy
+            p | All Right Reserved |
+            
+        SCRIPT 
+            include ../static/index.js

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media (max-width:400px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media(min-width:400px) and (max-width:800px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media(min-width:800px) and (max-width:1200px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media(min-width:1200px) {
+            body {
+                background-color: green;
+            }
+
+        }
+
+        .bdr {
+            border: 2px solid black;
+            background-color: wheat;
+            padding: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Service</span>
+            <span>Contactus</span>
+        </nav>
+        <section class="bdr">
+            <h2> Learn Css in hindi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident sit autem aperiam maiores corporis! Qui, ad nobis iure voluptatibus, recusandae cumque animi eos natus autem optio nisi aut laboriosam itaque aliquid ipsam perferendis pariatur maiores deleniti labore provident praesentium alias? Optio ducimus ullam placeat laborum fugit, expedita autem fuga? Earum atque voluptates quia deleniti impedit? Obcaecati id minus, quo tenetur quidem neque itaque exercitationem voluptatum, eligendi rerum quis quae facere distinctio possimus facilis similique nobis! Dolores quasi quas inventore possimus blanditiis tempora rerum, explicabo perspiciatis sed asperiores expedita voluptatum et. Eum hic asperiores ex maxime harum laborum non repellat inventore doloremque exercitationem vel, minus cupiditate rerum beatae cumque earum tempora placeat delectus quibusdam quod autem. Nam facere fugiat, assumenda placeat eaque dolorem maiores repellendus, consectetur ut quam sunt explicabo tempora deserunt. Tempore, dolorem.</p>
+        </section>
+        <aside class="bdr">
+
+            <h1> More about uS</h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        copyright CodeWithHarry
+    </footer>
+</body>
+
+</html>

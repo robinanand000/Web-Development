@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is my form</h2>
+    <form>
+        <label for="name">Name :</label>
+        <div>
+            <input type="text" name="my name" id="name">
+        </div>
+        <br>
+        <label for="email">Email :</label>
+        <div>
+            <input type="email" name="my email" id="email">
+        </div>
+        <br>
+        <label for="pass">Password :</label>
+        <div>
+            <input type="text" name="my password" id="pass">
+        </div>
+        <br>
+        <label for="date">Date :</label>
+        <div>
+            <input type="date" id="date">
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="mybonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="elegibility">Are you 18+?  </label>
+            <input type="checkbox" name="myelegibility" id="elegibility">
+        </div>
+        <br>
+        <div>
+
+            <label for="male">Gender : Male</label> <input type="radio" name="mygender" id="male">
+            <label for="female">Female</label> <input type="radio" name="mygender" id="female">
+            <label for="others">others</label> <input type="radio" name="mygender" id="others">
+        </div>
+        <br>
+        <label for="des">Tell about yourself :</label>
+        <div>
+            <br><textarea name="mytext" cols="90" rows="5" id="des"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Select Car :</label>
+            <select name="mycar" id="car">
+                <option value="Ast">Aston Martin</option>
+                <option value="Bug" selected>Bugatti Chiron</option>
+                <option value="lamb">Lamborgini</option>
+                <option value="cher">Chevrolet Camaro</option>
+                <option value="must">Mustang GT</option>
+                <option value="dodge">Dodge Challenger SRT demon</option>
+                <option value="swift">Swift</option>
+                <option value="ind">Indica</option>
+                <option value="bmw">BMW </option>
+                <option value="aud">Audi S8</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>

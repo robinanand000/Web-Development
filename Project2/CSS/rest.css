@@ -1,0 +1,126 @@
+/* navigation bar */
+#navbar{
+    overflow: hidden;
+
+}
+#navbar ul li {
+    font-size: 1rem;
+    list-style: none;
+    overflow: hidden;
+    
+}
+
+#navbar ul li a {
+    padding: 2px 2px;
+    overflow: hidden;
+
+}
+
+
+/* home - section  */
+
+#home {
+    height: 321px;
+    padding: 3px 10px;
+    overflow: hidden;
+
+}
+
+#home::before {
+    height: 450px;  
+    overflow: hidden;
+
+}
+#home h1 {
+   overflow: hidden;
+}
+#home p {
+    font-size: 1rem;
+    overflow: hidden;
+    overflow: hidden;
+
+}
+
+/* service-section */
+
+#services {
+overflow: hidden;
+}
+
+#services .box {
+    padding: 10px 4px;
+    margin: 4px 0px;
+}
+#services .box img {
+    height: 80px;
+}
+
+/* .client-section */
+.client-section {
+    height: 400px;
+    overflow: hidden;
+}
+
+.client-section::before {
+
+    height: 400px;
+
+}
+
+#clients {
+    flex-wrap: wrap;
+}
+
+.client-item {
+    padding: 25px 30px;
+}
+
+#clients img {
+    height: 84px;
+}
+
+/* contact us   */
+
+#contact {
+    height: 450px;
+    overflow: hidden;
+}
+
+#contact::before {
+    height: 450px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#contact-box input, #contact-box textarea {
+    width: 30%;
+}
+
+#contact-box button {
+    width: 35%;
+}
+#contact-box form {
+    width: 100%;
+}
+/* footer */
+footer{
+    overflow: hidden;
+}
+/* Utility Classes */
+.h-primary {
+    font-size: 1.2rem;
+    padding: 10px;
+
+}
+
+.h-secondary {
+    font-size: 1rem;
+}
+
+.btn {
+    font-size: 1.1rem;
+}

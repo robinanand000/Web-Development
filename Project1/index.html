@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Fitness</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Css reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/gym.png");
+            height: 900px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        /* .header {
+            position: sticky;
+            top: 0px;
+        } */
+
+        .left {
+            font-family: 'Baloo Bhai 2', cursive;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            /* border: 3px solid red; */
+            display: inline-block;
+        }
+
+        .left img {
+            width: 105px;
+            height: 60px;
+            filter: invert(100%);
+
+        }
+
+        .left div {
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 18px;
+
+        }
+
+        .mid {
+            display: block;
+            /* border: 1px solid red; */
+            margin: 2px auto;
+            width: 60%;
+            position: sticky;
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            /* border: 3px solid red; */
+            display: inline-block;
+            font-family: 'Baloo Bhai 2', cursive;
+
+
+        }
+
+        .btn {
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 3px 3px;
+            margin: 3px 3px;
+            opacity: 0.7
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        .right div {
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+
+            font-weight: bold;
+        }
+
+        .fa-facebook {
+            padding: 2px 4px;
+            color: blue;
+            margin: 3px 7px;
+
+        }
+
+        .fa-facebook:hover {
+            cursor: pointer;
+            color: black;
+
+        }
+
+        .fa-twitter {
+            padding: 2px 3px;
+            color: rgb(65, 183, 230);
+            margin: 3px 5px;
+
+        }
+
+        .fa-twitter:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: auto;
+            font-size: 25px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 34px 30px;
+        }
+
+        .navbar li a:hover {
+            color: grey;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .container {
+            border: 2px solid white;
+            background-color: #000000;
+            border-radius: 20px;
+            margin: 100px 100px;
+            padding: 30px 25px;
+            width: 30%;
+            opacity: 0.7;
+        }
+
+        .login-btn {
+            display: block;
+            width: 50%;
+            margin: 13px auto;
+            padding: 2px 4px;
+            font-size: 13px;
+            border: 1px solid black;
+            border-radius: 3px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+        }
+
+        .login-btn:hover {
+            background-color: grey;
+            cursor: pointer;
+        }
+
+        .container h3 {
+            text-align: center;
+            display: block;
+            width: 82%;
+            font-size: 30px;
+            margin: 0px auto;
+            padding: 3px 0px;
+        }
+
+        .form-grp input {
+            border: 1px solid white;
+            display: block;
+            width: 43%;
+            border-radius: 3px;
+            margin: 7px auto;
+            padding: 8px 15px;
+
+        }
+
+        .ruler {
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+
+        .ruler hr {
+            display: inline-block;
+            color: white;
+            width: 35%;
+            margin: 3px 25px;
+            box-sizing: border-box;
+
+        }
+
+        .btn a {
+            text-decoration: none;
+        }
+
+        .signin a {
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+
+        .signin {
+            text-align: center;
+        }
+
+        .signin button {
+            display: block;
+            width: 35%;
+            margin: 2px auto;
+            padding: 2px 4px;
+            font-size: 13px;
+            border: 1px solid black;
+            border-radius: 3px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+        }
+
+        .signin button:hover {
+            background-color: grey;
+            cursor: pointer;
+        }
+
+        .signup {
+            border: 2px solid white;
+            margin: 22px auto;
+            padding: 14px 60px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 15px;
+            border-radius: 4px;
+            width: 50%;
+
+        }
+
+        .signup a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/logo.png">
+            <div>Hello Fitness</div>
+        </div>
+
+        <!-- for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Nutriton</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+
+        <!-- for social media  buttons -->
+        <div class="right">
+            <div>Join Us On</div>
+            <button class="btn"><a href="https://facebook.com" class="fa fa-facebook"></a></button>
+            <button class="btn"><a href="https://twitter.com" class="fa fa-twitter"></a></button>
+        </div>
+    </header>
+
+    <!-- login page -->
+    <div class="container">
+        <h3>Welcome To HELLO FITNESS Gym </h3>
+        <form action="noaction.php">
+            <div class="form-grp">
+                <input type="text" name="" id="" placeholder="Username,or email">
+                <input type="text" name="" id="" placeholder="Password">
+            </div>
+            <button class="login-btn">Log In</button>
+        </form>
+        <!-- for OR ruler -->
+        <div class="ruler">
+            <hr>OR
+            <hr>
+        </div>
+        <!-- for signin buttons -->
+        <div class="signin">
+
+            <button>Log in with Facebook</button>
+            <button>Log in with Google</button>
+            <a href="https://no.com">Forgot password?</a>
+        </div>
+        <!-- for signup -->
+        <div class="signup">
+
+            Don't have an account?<a href="https://no.com">&nbsp;Signup</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Using Grids</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .item {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 12px 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About ContactUs More
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nesciunt commodi neque omnis dolore voluptas
+            dicta? Maiores doloremque veritatis, at, soluta autem ipsum unde nihil, libero sapiente facilis recusandae
+            quam cupiditate ad? Vel, nobis!
+        </div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolorem repudiandae
+            inventore. Nulla commodi iusto quaerat recusandae ipsum earum consectetur neque perferendis sint aspernatur
+            deserunt odit in accusamus itaque, tempore ea autem cumque voluptates.
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto cupiditate
+            voluptatibus commodi nobis at, saepe ipsam vero enim dolore? A dicta dolorum iusto ipsum eaque quidem
+            aperiam. Officiis perferendis dignissimos facilis ea qui.
+        </footer>
+    </div>
+</body>
+
+</html>

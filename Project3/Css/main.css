@@ -1,0 +1,310 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation bar */
+
+#navbar {
+    margin: 0.5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url("../Img/bg1.png") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Navbar : Logo */
+
+#logo {
+    position: relative;
+    left: 1rem;
+}
+
+#logo a {
+    display: flex;
+    text-decoration: none;
+}
+
+#logo img {
+    height: 3rem;
+    filter: invert();
+}
+
+#logotext{
+    color:rgb(243, 12, 81);
+    font-size: 1.8rem;
+    align-self: center;
+    padding: 0rem 0.4rem;
+}
+
+/* Navbar : List */
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.item {
+    flex-direction: row;
+    list-style: none;
+    padding: 0rem 1rem;
+}
+
+.item a {
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    color: rgb(216, 213, 213);
+    font-size: 1.2rem;
+}
+
+.item a.active {
+    color: rgb(243, 12, 81);
+}
+
+.item a:hover {
+    color: rgb(243, 12, 81);
+}
+/* Navbar : search bar */
+.searchbar input{
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    background: url('../Logo/icon.png') no-repeat 13px center;
+}
+
+/* Navbar : Signup */
+#signup {
+    position: relative;
+    right: 4rem;
+}
+
+#signup a {
+    background-color: rgb(243, 12, 81);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+}
+
+/* Section : Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin: 10rem 0rem;
+}
+
+#home h1 {
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 4rem;
+}
+
+#para {
+    text-align: center;
+    width: 50%;
+}
+
+#para p {
+    color: rgb(190, 190, 190);
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+
+#home button {
+    padding: 1.5rem 2.5rem;
+    border-radius: 4rem;
+    color: white;
+    background-color: transparent;
+    font-size: 1.8rem;
+    border: 2px solid white;
+    margin: 1rem;
+}
+
+#home button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+/* Section : section */
+#section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../Img/bg2.jpg") no-repeat top center/cover;
+    /* border: 2px solid yellow; */
+    margin-top: 13.5rem;
+}
+
+
+/* container1 */
+#container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin: 7rem 0rem;
+}
+
+#container1 img {
+    height: 20rem;
+    width: 20rem;
+    padding: 1.6rem;
+    border-radius: 3rem;
+}
+
+#para1 {
+    /* border: 2px solid white; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+#para1 div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* container2 */
+
+#container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid green; */
+    margin: 7rem 0rem;
+}
+
+#container2 img {
+    height: 20rem;
+    width: 20rem;
+    padding: 1.6rem;
+    border-radius: 3rem;
+}
+
+#para2 {
+    /* border: 2px solid white; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+#para2 div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* container3 */
+
+#container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    margin: 7rem 0rem;
+
+
+}
+
+#container3 img {
+    height: 20rem;
+    width: 20rem;
+    padding: 1.6rem;
+    border-radius: 3rem;
+}
+
+#para3 {
+    /* border: 2px solid white; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+#para3 div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer of the Home page*/
+
+#footer {
+    background: url("../Img/bg2.jpg") no-repeat center center/cover;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer ul li {
+    padding: 2.5rem 0.5rem;
+    list-style: none;
+}
+
+#footer ul li a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+
+}
+
+
+
+/* Utility classes */
+.font1 {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.font2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.font3 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.font4 {
+    font-family: 'Prompt', sans-serif;
+}
+
+.heading1 {
+    color: white;
+    padding: 0rem 4rem;
+    font-size: 6rem;
+
+}
+
+.heading2 {
+    color: rgb(243, 12, 81);
+    padding: 0rem 4rem;
+    font-size: 6rem;
+
+}
+
+.allpara {
+    color: rgb(235, 235, 235);
+    padding: 2rem 4rem;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set intervals ans Set timeout</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: aqua;
+            display: flex;
+            font-size: 2rem;
+            height: 50%;
+            padding: 30px;
+            width: 50%;
+        }
+
+        #time {
+            font-size: 2rem;
+        }
+        .box{
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h1>this is a container</h1> -->
+        <div class="box">
+            Time is now: <span id="time"></span>
+        </div>
+    </div>
+    <script>
+        console.log("this is set timeout and clear timeout tutorial")
+        // function greet(){
+        //     console.log(`Hello Good morning`);
+        // }
+        // timeout = setTimeout(greet,5000);
+        // clearTimeout(timeout);
+
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        // displayTime();
+        setInterval(displayTime, 1000);
+
+    </script>
+</body>
+
+</html>

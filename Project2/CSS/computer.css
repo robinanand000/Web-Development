@@ -1,0 +1,101 @@
+
+/* navigation bar */
+
+
+
+/* home - section  */
+
+#home {
+    height: 376px;
+    padding: 3px 10px;
+}
+
+#home::before {
+    height: 450px;   
+}
+#home p {
+    font-size: 1rem;
+}
+
+/* service-section */
+
+#services {
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#services .box {
+    padding: 40px 48px;
+    margin: 4px 30px;
+}
+#services .box img {
+    height: 250px;
+}
+
+/* .client-section */
+.client-section {
+    height: 400px;
+}
+
+.client-section::before {
+
+    height: 400px;
+
+}
+
+#clients {
+    flex-wrap: wrap;
+}
+
+.client-item {
+    padding: 25px 30px;
+}
+
+#clients img {
+    height: 84px;
+}
+
+/* contact us   */
+
+#contact {
+    height: 450px;
+}
+
+#contact::before {
+    height: 450px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-box input, #contact-box textarea {
+    width: 30%;
+}
+
+#contact-box button {
+    width: 35%;
+}
+#contact-box form {
+    width: 100%;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.2rem;
+    padding: 10px;
+
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+}
+
+.btn {
+    font-size: 1.1rem;
+}
+
+
+

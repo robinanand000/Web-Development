@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+block style 
+    style 
+        include ../static/style.css
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2:wght@600&family=Dancing+Script:wght@500&family=Permanent+Marker&family=Ubuntu&display=swap" rel="stylesheet">
+
+block content 
+
+    section#intro-section
+        div Welcome to  Robin's Dance Acadmey
+        div EAt Sleep Dance Repeat 
+    section#mission-section 
+        h2 Our Mission 
+        div.card
+            h3 Dance perfection  
+        div.card
+            h3 Dance the way you like 
+        div.card
+            h3 Dance is passion   
+    section#sponser-section 
+        h2 Our Sponsers
+        div.sponser
+            img(src="/static/img/logo1.png", alt="sponser image" Class="sp-image")
+            img(src="/static/img/logo2.png", alt="sponser image" Class="sp-image")
+            img(src="/static/img/logo3.png", alt="sponser image" Class="sp-image")
+            img(src="/static/img/logo4.png", alt="sponser image" Class="sp-image")

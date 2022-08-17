@@ -1,0 +1,116 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    background-color: slategray;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 30px 10px;
+}
+#navbar span{
+    display: inline-block;
+    color: rgb(41, 38, 38);
+    background-color: white;
+    transform: skew(-23deg);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 9px 50px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-weight: bold; 
+}
+#navbar span:hover{
+    transition: all 0.5s;
+    background-color: rgb(41, 38, 38);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+/* INTRO SECTION  */
+#intro-section{
+    display: flex;
+    height: 515px;
+    background: url(/static/img/bg4.jpg) no-repeat center center/cover;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro-section div{
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+/* Mission Section */
+#mission-section{
+    height: 300px;
+}
+#mission-section h2{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+.card{
+    background-color: lightblue;
+    display: inline-block;
+    width: 32%;
+    border: 2px solid black;
+    height: 190px;
+    border-radius: 5px;
+    margin: 35px 8px;
+}
+.card h3{
+    text-align: center;
+}
+
+
+/* SPONSER SECTION */
+#sponser-section{
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#sponser-section h2{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+.sponser{
+    display: flex;
+    margin: 75px auto;
+    max-width: 833px;
+    height: 100px;
+    justify-content: space-evenly;
+}
+.sp-image{
+    height: 60%;
+    margin: 20px;
+}
+
+
+/* FOOTER */
+#footer{
+    background-color: lightslategray;
+    height: 50px;
+    color: whitesmoke;
+}
+#footer p{
+    text-align: center;
+}
